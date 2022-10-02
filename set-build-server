@@ -2,11 +2,20 @@
 sudo apt -y install gcc curl make repo libxml2-utils flex m4
 sudo apt -y install openjdk-8-jdk lib32stdc++6 libelf-dev mtools
 sudo apt -y install libssl-dev python-enum34 python-mako syslinux-utils
-sudo apt -y install bc bison build-essential ccache g++-multilib gcc-multilib gnupg gperf imagemagick lib32ncurses5-dev lib32readline-dev lib32z1-dev libelf-dev liblz4-tool libncu rses5 libncurses5-dev libsdl1.2-dev libxml2 lzop pngcrush rsync schedtool squashfs-tools xsltproc zip zlib1g-dev
+sudo apt -y install bc bison build-essential
+sudo apt -y install ccache g++-multilib gcc-multilib
+sudo apt -y install gnupg gperf imagemagick
+sudo apt -y inatall lib32ncurses5-dev lib32readline-dev lib32z1-dev
+sudo apt -y inatall libelf-dev liblz4-tool libncu
+sudo apt -y install rses5 libncurses5-dev libsdl1.2-dev 
+sudo apt -y install libxml2 lzop pngcrush
+sudo apt -y install rsync schedtool squashfs-tools
+sudo apt -y install xsltproc zip zlib1g-dev
 mkdir -p ~/bin
 curl https://storage.googleapis.com/git-repo-downloads/repo > ~/bin/repo
 chmod a+x ~/bin/repo
 echo export PATH='$HOME/bin:$PATH' >> ~/.bashrc
 echo ""
-echo 'repo init -u gti://git.osdn.net/gitroot/android-x86/manifest -b r-x86'
+echo "If you want to build 'android-x86' iso, "
+echo 'repo init -u git://git.osdn.net/gitroot/android-x86/manifest -b r-x86'
 echo ""
